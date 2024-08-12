@@ -8,3 +8,4 @@ console.log('world');
 // git add .add
 // git commit -m "msg"
 // git log --all
+//git checkout (Add)
