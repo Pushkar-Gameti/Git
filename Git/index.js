@@ -7,3 +7,4 @@ console.log('world');
 //git status 
 // git add .add
 // git commit -m "msg"
+// git log --all
