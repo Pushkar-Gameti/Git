@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #3b5998;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 980px;
+            margin: 60px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-left {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .login-left h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .login-left p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .login-right {
+            width: 40%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #1877f2;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #165bdf;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .forgot-password a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .create-account {
+            background-color: #42b72a;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .create-account:hover {
+            background-color: #36a420;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Facebook
+    </div>
+
+    <div class="login-container">
+        <div class="login-left">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+
+        <div class="login-right">
+            <form class="login-form">
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Log In">
+                <div class="forgot-password">
+                    <a href="#">Forgotten password?</a>
+                </div>
+                <hr>
+                <a href="#" class="create-account">Create New Account</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Facebook &copy; 2024</p>
+    </div>
+</body>
+</html>

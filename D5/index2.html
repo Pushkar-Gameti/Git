@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: red;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* background-image: url('./back.jpeg');
+            background-size: cover; */
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 49%, rgba(0,212,255,1) 100%);
+        }
+        div{
+            height: 40px;
+            width: 40px;
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            animation-name: scale;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scale {
+            0%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1.6);
+                opacity: .6;
+            }
+        }
+        /* h1{
+            --kdhff:blue;
+            color: var(--kdhff);
+        } */
+        h1::before{
+            content: '😁';
+        }
+        h1::after{
+            content: '🤮';
+        }
+        h1::first-letter{
+            color: red;
+        }
+        p::first-line{
+            color: brown;
+        }
+        ::selection{
+            color: blue;
+            background-color: mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div>
+
+    </div> -->
+    <h1>Techno</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ab veniam, accusantium numquam non sunt deserunt in excepturi praesentium enim quo, voluptas id dolores eaque saepe recusandae ducimus explicabo dolorum.</p>
+    <script>
+
+    </script>
+</body>
+</html>

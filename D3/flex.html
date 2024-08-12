@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 600px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .items {
+            padding: 20px;
+            height: 80px;
+        }
+
+        .item1 {
+            /* flex-grow: 1; */
+            /* flex-basis: 300px;
+            font-style: 0; */
+            flex: 0 0 500px;/*(grow shrink basis)*/
+        }
+        .item3{
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item1" style="background-color: yellow;">iten1</div>
+        <div class="items item2" style="background-color: orange;">iten2</div>
+        <div class="items item3" style="background-color: red;">iten3</div>
+        <div class="items item4" style="background-color: green;">iten4</div>
+    </div>
+</body>
+
+</html>
+<!-- fles container-item 
+flex dontianer
+displayflex -->

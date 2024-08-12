@@ -1,0 +1,7 @@
+inline = a,img
+block  = h,p
+void elemen or self closing element = img
+list:
+odered list = ol
+unodered list = ul
+table list = table
