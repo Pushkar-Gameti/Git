@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object Example</title>
+</head>
+<body>
+    <h1>Print value of object</h1>
+    <p id="output"></p>
+    <script>
+        const outerObject = {
+            obj: {
+                value: 42
+            }
+        };
+        const Value = outerObject.obj.value;
+        document.getElementById('output').textContent = `The value of the object is: ${Value}`;
+    </script>
+</body>
+</html>

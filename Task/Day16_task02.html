@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //right angle triangle
+        console.log("right angle triangle");
+        function printTriangle(rows) {
+    for (let i = 1; i <= rows; i++) {
+        console.log('* '.repeat(i));
+    }
+}
+    printTriangle(8);
+    //reverse right angle triangle
+    console.log("reverse right angle triangle");
+    function printReverseTriangle(rows) {
+    for (let i = rows; i > 0; i--) {
+        let stars = '';
+        for (let j = 0; j < i; j++) {
+            stars += '* ';
+        }
+        console.log(stars);
+    }
+}
+    printReverseTriangle(5);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            width: 150px;
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Check number is even or odd</h1>
+    <input type="number" id="number1" placeholder="Enter the number">
+    <button onclick="CheckNumber()">Check</button>
+    <br><br>
+    <div>
+        <label id="evenodd"></label>
+    </div>
+
+    <h1>Solve Expression</h1>
+    <input type="number" id="num1" placeholder="First Number">
+    <input type="number" id="num2" placeholder="Second Number"><br><br>
+    <input type="text" id="opre" placeholder="Operater">
+    <button onclick="SolveExpression()">Solve</button>
+    <br><br>
+    <div>
+        <label id="result"></label>
+    </div>
+
+    <script>
+        function CheckNumber() {
+            var number1 = parseInt(document.getElementById("number1").value);
+            var evenodd = document.getElementById("evenodd");
+            if(number1 % 2 == 0){
+                evenodd.textContent = "Even";
+            }
+            else{
+                evenodd.textContent = "Odd";
+            }
+        }
+
+        function SolveExpression() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var opre = document.getElementById("opre").value;
+            var result = document.getElementById("result");
+            if (opre == '+'){
+                result.textContent = num1+num2;
+            } else if (opre == '-'){
+                result.textContent = num1-num2;
+            } else if (opre == '*'){
+                result.textContent = num1*num2;
+            } else if (opre == '/'){
+                result.textContent = num1/num2;
+            } else {
+                result.textContent = "Invalid operater";
+            }
+        }
+    </script>
+</body>
+
+</html>

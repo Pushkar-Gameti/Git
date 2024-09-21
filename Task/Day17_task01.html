@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>UniqueId</h1>
+    <button onclick="generateId()">Push kar</button>
+    <p id="uniqueid"></p>
+
+    <script>
+      function generateId() {
+        const allChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz12345678910?!@#$%&~'
+        const idLength = 10;
+
+        let uniqueId = '';
+        for (let i = 0; i < idLength; i++) {
+          const randomIndex = Math.floor(Math.random() * allChar.length);
+          uniqueId += allChar[randomIndex];
+        }
+
+        document.getElementById('uniqueid').textContent = uniqueId;
+      }
+    </script>
+  </div>
+</body>
+
+</html>

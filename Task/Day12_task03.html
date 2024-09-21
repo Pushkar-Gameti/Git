@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find number</title>
+</head>
+<body>
+    <h1>Find number</h1>
+    <p>Enter the Array</p>
+    <input type="text" id="numbersInput">
+    <input type="number" id="number">
+    <button onclick="filterValues()">Check</button>
+
+    <p>Found number are</p>
+    <div id="result"></div>
+
+    <script>
+        function filterValues() {
+            let input = document.getElementById("numbersInput").value
+            let numbersArray = input.split(",").map(Number)
+            let number = document.getElementById("number").value
+            let filteredArray = numbersArray.filter(function(value) {
+                return value % number === 0
+            })
+            document.getElementById("result").textContent = filteredArray.join(", ")
+        }
+    </script>
+</body>
+</html>

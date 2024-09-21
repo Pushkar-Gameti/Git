@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            background-color: #fafafa;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6d6dff;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo span {
+            margin-left: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #555;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .get-started-btn {
+            background-color: #6d6dff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .get-started-btn:hover {
+            background-color: #5a5ae6;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #ffffff;
+        }
+
+        .hero img {
+            padding-top: 400px;
+            width: 1500px;;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+
+        .team-section {
+            padding: 500px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .team-section h2 {
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .team-section p {
+            
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            width: 220px;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 20px;
+            margin: 15px 0 5px;
+            color: #333;
+        }
+
+        .team-member p {
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./logo.jpg" alt="Fancy Logo" height="100">
+            <span>Instagram</span>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="#" class="get-started-btn">Get Started</a>
+    </div>
+
+    <div class="hero">
+        <img src="./Ass_6.jpg" alt="Hero Image">
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <h2>Team</h2>
+        <p>Meet Our Expert</p>
+
+        <div class="team-members">
+            <div class="team-member">
+                <img src="./p1.jpg" alt="Michel Smith">
+                <h3>Michel Smith</h3>
+                <p>Product Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="./p2.jpg" alt="David Smith">
+                <h3>David Smith</h3>
+                <p>Creative Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="./p3.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Graphic Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="./p4.jpg" alt="Huoe John">
+                <h3>Huoe John</h3>
+                <p>Web Designer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

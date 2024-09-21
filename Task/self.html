@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Checker</title>
+</head>
+<body>
+
+    <center>
+        <h2>Enter a Numbers:</h2>
+    <input type="number" id="number1" placeholder="First Number">
+    <input type="number" id="number2" placeholder="Second Number"><br><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="multi()">x</button>
+    <button onclick="divide()">/</button>
+    <br><br>
+    <button onclick="answer()">=</button>
+
+    <p id="result"></p>
+    </center>
+
+    <script>
+        
+        function add() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = document.getElementById("result");
+            result.textContent = ("Sum of numbers is: ",Number(number1)+Number(number2))
+        }
+        function sub() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var result = document.getElementById("result");
+            result.textContent = ("the subraction of numbers is ",number1-number2)
+        }
+        function multi() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            
+            var result = document.getElementById("result");
+
+            result.textContent = ("the multi of number is: ",number1*number2)
+        }
+        function divide() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            
+            var result = document.getElementById("result");
+
+            result.textContent = ("the devition10 of number is ",number1/number2)
+        }
+        
+    </script>
+
+</body>
